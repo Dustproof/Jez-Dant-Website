@@ -132,6 +132,12 @@ nav {
   color: #fff;
 }
 
+nav.scrolled {
+  background: #fff;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
 nav .container {
   width: 100%;
   max-width: 1200px;
@@ -421,6 +427,13 @@ nav .container {
   }
   .nav-link {
     padding: 16px 28px;
+  }
+  .hero {
+    padding: 64px 28px 0;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
