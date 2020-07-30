@@ -20,7 +20,6 @@ const burgerLines = document.querySelector('.burger-line');
 
 window.onscroll = function() {
     var top = window.scrollY;
-    console.log(top);
     if (top > 32) {
         nav.classList.add('scrolled');
         navButton.classList.remove('light');
