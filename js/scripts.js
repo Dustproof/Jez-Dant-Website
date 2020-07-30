@@ -16,17 +16,17 @@ navSlide();
 
 const nav = document.querySelector('nav');
 const navButton = document.getElementById('cv-button')
-const burgerLines = document.querySelector('.burger-line');
+const burgerLines = document.querySelectorAll('.burger-line');
 
 window.onscroll = function() {
     var top = window.scrollY;
-    if (top > 32) {
+    if (top > 32) for(var i = 0; i < burgerLines.length; i++) {
         nav.classList.add('scrolled');
         navButton.classList.remove('light');
-        burgerLines.classList.remove('light');
-    } else {
+        burgerLines[i].classList.remove('light');
+    } else for(var i = 0; i < burgerLines.length; i++) {
         nav.classList.remove('scrolled');
         navButton.classList.add('light');
-        burgerLines.classList.add('light');
+        burgerLines[i].classList.add('light');
     }
 }

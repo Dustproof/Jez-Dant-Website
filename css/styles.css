@@ -127,6 +127,22 @@ body {
           justify-content: space-between;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  position: relative;
+}
+
+.2-col {
+  width: 100%;
+  max-width: 50%;
+}
+
 /* Nav */
 nav {
   -webkit-box-sizing: border-box;
@@ -153,7 +169,7 @@ nav {
 nav.scrolled {
   color: #171E30;
   background: #fff;
-  border-bottom: #BCC0C7;
+  border-bottom: 1px solid #BCC0C7;
   -webkit-transition: background-color 200ms;
   transition: background-color 200ms;
 }
@@ -282,6 +298,7 @@ nav .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .burger-line {
@@ -344,6 +361,8 @@ nav .container {
   background: #FE5C61;
   color: #fff;
   text-align: center;
+  -webkit-box-shadow: 0 1px 1px rgba(23, 30, 48, 0.2);
+          box-shadow: 0 1px 1px rgba(23, 30, 48, 0.2);
 }
 
 .button:hover {
@@ -361,6 +380,8 @@ nav .container {
   background: transparent;
   border: 1px solid rgba(23, 30, 48, 0.4);
   color: #171E30;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button.secondary:hover {
@@ -400,6 +421,21 @@ nav .container {
   margin-right: 0;
 }
 
+/* Work */
+.work-container {
+  margin: 0 20px 0 0;
+}
+
+.work-container.right {
+  margin: 0 0 0 20px;
+}
+
+.work-image {
+  width: 100%;
+  padding-top: 75%;
+  background: red;
+}
+
 @media only screen and (max-width: 768px) {
   .burger {
     display: -webkit-box;
@@ -412,7 +448,7 @@ nav .container {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    top: 56px;
+    top: 64px;
     bottom: 0;
     left: 0;
     min-width: 50%;
